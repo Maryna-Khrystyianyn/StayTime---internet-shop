@@ -1,0 +1,39 @@
+.success-picture{
+    width: 100px;
+svg{
+    width: 100px;
+    color: $akcent-green;
+}
+
+}
+.success-text{
+    h1{
+        color: $akcent-green;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        color: $main-text-color;
+        text-align: center;
+    }
+}
+
+.error-picture{
+    width: 100px;
+svg{
+    width: 100px;
+    color: red;
+}
+
+}
+.error-text{
+    h1{
+       
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        color: $main-text-color;
+        text-align: center;
+    }
+}

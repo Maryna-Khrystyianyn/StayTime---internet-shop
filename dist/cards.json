@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Sapphire Chest 100",
+        "price": 3.99,
+        "description": ["100 Sapphires.", "Use your Sapphires to buy exclusive ranks, powerful items, boosters, and more in the server shop!", "Note: This is a virtual item. Sapphires will be added automatically after opening the chest in-game."],
+        "image": "gems1.png",
+        "type": "gems",
+        "discont": 15
+    },
+    {
+        "name": "Sapphire Chest 200",
+        "price": 5.99,
+        "description": ["200 Sapphires.", "Use your Sapphires to buy exclusive ranks, powerful items, boosters, and more in the server shop!", "Note: This is a virtual item. Sapphires will be added automatically after opening the chest in-game."],
+        "image": "gems2.png",
+        "type": "gems",
+        "discont": 15
+    },
+    {
+        "name": "Sapphire Chest 500",
+        "price": 6.99,
+        "description": ["500 Sapphires.", "Use your Sapphires to buy exclusive ranks, powerful items, boosters, and more in the server shop!", "Note: This is a virtual item. Sapphires will be added automatically after opening the chest in-game."],
+        "image": "gems1.png",
+        "type": "gems",
+        "discont": 15
+    },
+    {
+        "name": "King Rank",
+        "price": 4.99,
+        "description": ["Unlock powerful commands like /fly and /repair", "Get a shiny name tag", "Stand out in chat with a custom prefix!", "Permanent rank."],
+        "image": "ranks1.jpg",
+        "type": "ranks",
+        "discont": 10
+    },
+    {
+        "name": "King Rank Supper",
+        "price": 7.50,
+        "description": ["Unlock powerful commands like /fly and /repair", "Get a shiny name tag", "Stand out in chat with a custom prefix!", "Permanent rank."],
+        "image": "ranks2.png",
+        "type": "ranks",
+        "discont": 25
+    },
+    {
+        "name": "3 Crate Keys",
+        "price": 2.00,
+        "description": ["Open any crate on the server and get a chance to win rare items, ranks, or currencies.", "Includes 3 universal keys."],
+        "image": "keys1.jpg",
+        "type": "keys",
+        "discont": 0
+    },
+    {
+        "name": "5 Crate Keys",
+        "price": 4.29,
+        "description": ["Open any crate on the server and get a chance to win rare items, ranks, or currencies.", "Includes 5 universal keys."],
+        "image": "keys2.jpg",
+        "type": "keys",
+        "discont": 0
+    },
+    {
+        "name": "10 Crate Keys",
+        "price": 6.99,
+        "description": ["Open any crate on the server and get a chance to win rare items, ranks, or currencies.", "Includes 10 universal keys."],
+        "image": "keys2.jpg",
+        "type": "keys",
+        "discont": 0
+    },
+    {
+        "name": "20 Crate Keys",
+        "price": 9.99,
+        "description": ["Open any crate on the server and get a chance to win rare items, ranks, or currencies.", "Includes 10 universal keys."],
+        "image": "keys2.jpg",
+        "type": "keys",
+        "discont": 30
+    },
+    {
+        "name": "XP Booster (2x for 1 Hour)",
+        "price": 0.99,
+        "description": ["Double your experience gain for one full hour.", "Perfect for leveling up fast!"],
+        "image": "outher1.png",
+        "type": "outher",
+        "discont": 0
+    },
+    {
+        "name": "Wolf Pet",
+        "price": 0.99,
+        "description": ["Summon your loyal wolf companion! ", "Cosmetic-only, follows you around and looks awesome.", "Exclusive to premium users."],
+        "image": "outher1.png",
+        "type": "outher",
+        "discont": 0
+    }
+]

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menue-container">
+        <div class="logo"><img src="media/images/logo.png" alt="logo" /></div>
+        <!-- fulscreen -->
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html#shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+                Shop</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                  />
+                </svg>
+                Rulles
+              </a>
+            </li>
+            <li>
+              <a href="contact.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="basket">
+          <p class="basket-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </p>
+
+          <span class="prise" id="total-price">0.00 $</span>
+          <p>
+            <svg
+              class="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </p>
+        </div>
+        <!-- smoll 700px screen -->
+        <div class="burger-menu">
+          <div class="container-burger">
+            <svg
+              id="burger"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <div class="container-burger-nav">
+            <ul>
+              <li>
+                <a href="index.html#shop">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                    />
+                  </svg>
+                  <span>Shop</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                    />
+                  </svg>
+                  <span>Rulles</span>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                    />
+                  </svg>
+                  <span>Contacts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container rulles">
+      <h1 class="h1-pages">Purchase Rules</h1>
+
+      <p>
+        Welcome to our Minecraft Donat Store! Please read these rules carefully
+        before making a purchase.
+      </p>
+      <ul>
+        <li>What you get When you buy items from our store, you receive virtual
+      privileges, gems, coins, keys, or other in-game benefits. These will be
+      activated on the StayTime server (server number will be specified).</li>
+        <li>Activation time Purchased privileges become active on the server within 24
+      hours after payment is confirmed.</li>
+        <li>Enter your nickname correctly When
+      making a purchase, please enter your exact Minecraft nickname you use on
+      the StayTime server. We are not responsible for errors caused by incorrect
+      nicknames.</li>
+        <li>Digital goods All products in this store are virtual items.
+      After activation, they cannot be refunded, exchanged, or transferred to
+      another account.</li>
+        <li>Server rules By purchasing privileges or items, you
+      agree to follow the StayTime server rules. Breaking server rules may
+      result in temporary or permanent ban, without refund.</li>
+        <li>Support If you
+      have any questions or issues, please contact us via the support form or
+      email provided on the website.</li>
+      </ul>
+
+     
+    </div>
+    <div class="backdrop hidden"></div>
+     <!-- basket modal -->
+     <div class="cart-modal hidden">
+        <div class="cart-modal-content">
+          <button class="close">&times;</button>
+          <h2>Cart</h2>
+          <div class="cart-container">
+            <div class="cart-item">
+              <img
+                class="cart-img"
+                src="media/images/cards/gems1.png"
+                alt=""
+              />
+              <h4 class="item-name">Sapphire</h4>
+              <div class="item-total">12.99 $</div>
+              <p class="item-type">Gems</p>
+
+              <div class="item-quantity-container">
+                <button class="item-delete">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                    />
+                  </svg>
+                </button>
+                <button class="item-minus hidden">-</button>
+                <div class="item-quantity">2</div>
+                <button class="item-plus">+</button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img
+                class="cart-img"
+                src="media/images/cards/gems1.png"
+                alt=""
+              />
+              <h4 class="item-name">Sapphire</h4>
+              <div class="item-total">12.99 $</div>
+              <p class="item-type">Gems</p>
+
+              <div class="item-quantity-container">
+                <button class="item-delete">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                    />
+                  </svg>
+                </button>
+                <button class="item-minus hidden">-</button>
+                <div class="item-quantity">2</div>
+                <button class="item-plus">+</button>
+              </div>
+            </div>
+            <div class="total-price">
+              <p>Totall: <span class="modal-total"> 0.00 $</span></p>
+            </div>
+          </div>
+          <div class="ictruction">
+            <h3>Purchase Instructions</h3>
+            <ol>
+              <li>
+                <h4>Product selection</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aperiam facere corrupti eius esse quo dicta odit.
+                </p>
+              </li>
+              <li>
+                <h4>Payment for the product</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, neque quis. Aliquid, quidem.
+                </p>
+              </li>
+              <li>
+                <h4>Activation</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laudantium, natus!
+                </p>
+              </li>
+            </ol>
+          </div>
+          <div class="pay-info-container">
+            <form action="" class="pay-info">
+              <div class="user-info">
+                <label for="nick"> Your nickname on the server</label>
+                <input
+                  type="text"
+                  id="nick"
+                  placeholder="Enter your nickname"
+                  required
+                />
+                <label for="mail">Enter your email</label>
+                <input
+                  type="text"
+                  id="mail"
+                  placeholder="Enter your email"
+                  required
+                />
+                <label for="agree" class="agree"
+                  ><input type="checkbox" id="agree" required />
+                  <p>
+                    I accept the terms of the <span>user agreement</span> and
+                    the provision of services
+                  </p></label
+                >
+              </div>
+              <div class="pay">
+                <h3>Checkout</h3>
+                <div class="total-price">
+                  <p>Total: <span class="modal-total"> 0.00 $</span></p>
+                </div>
+                <button id="pay-now">Pay Now</button>
+                <p class="policy">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <span>Privacy Policy</span>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="http://js.stripe.com/v3/"></script>
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>

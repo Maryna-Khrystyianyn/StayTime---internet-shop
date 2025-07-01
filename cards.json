@@ -1,0 +1,176 @@
+[
+  {
+    "id":0,
+    "name": "x100 Sapphire",
+    "price": 0.99,
+    "description": [
+      "x100 Sapphires.",
+      "You can use Sapphires to buy powerful items, boosters, and more in the server shop!",
+      "Note: This is a virtual item. Sapphires will be added automatically in game."
+    ],
+    "image": "gems1.png",
+    "type": "gems",
+    "discont": 0
+  },
+  {
+    "id":1,
+    "name": "x200 Sapphires",
+    "price": 2.49,
+    "description": [
+      "x200 Sapphires.",
+      "You can use Sapphires to buy powerful items, boosters, and more in the server shop!",
+      "Note: This is a virtual item. Sapphires will be added automatically in game."
+    ],
+    "image": "gems1.png",
+    "type": "gems",
+    "discont": 10
+  },
+  {
+    "id":2,
+    "name": "x500 Sapphires",
+    "price": 6.99,
+    "description": [
+      "x500 Sapphires.",
+      "You can use Sapphires to buy powerful items, boosters, and more in the server shop!",
+      "Note: This is a virtual item. Sapphires will be added automatically in game."
+    ],
+    "image": "gems2.png",
+    "type": "gems",
+    "discont": 15
+  },
+  {
+    "id":3,
+    "name": "x1000 Sapphires",
+    "price": 9.99,
+    "description": [
+      "x1000 Sapphires.",
+      "You can use Sapphires to buy powerful items, boosters, and more in the server shop!",
+      "Note: This is a virtual item. Sapphires will be added automatically in game."
+    ],
+    "image": "gems3.png",
+    "type": "gems",
+    "discont": 20
+  },
+  {
+    "id":4,
+    "name": "Vip",
+    "price": 4.99,
+    "description": [
+      "Unlock commands: /heal, /feed, /hat, /wb",
+      "Unlock new kit",
+      "Stand out in chat with a custom prefix!",
+      "More slots at auction"
+    ],
+    "image": "ranks1.png",
+    "type": "ranks",
+    "discont": 10
+  },
+  {
+    "id":5,
+    "name": "Vip+",
+    "price": 7.49,
+    "description": [
+      "Unlock commands: /heal, /feed, /hat, /wb",
+      "Unlock new kit",
+      "Stand out in chat with a custom prefix!",
+      "More slots at auction"
+    ],
+    "image": "ranks2.jpg",
+    "type": "ranks",
+    "discont": 25
+  },
+  {
+    "id":6,
+    "name": "x3 Crate with Ranks",
+    "price": 2.0,
+    "description": [
+      "Open the crate on the server and get a chance to win rare ranks",
+      "Includes 3 crates"
+    ],
+    "image": "keys1.png",
+    "type": "keys",
+    "discont": 0
+  },
+  {
+    "id":7,
+    "name": "x5 Crate with Ranks",
+    "price": 4.99,
+    "description": [
+      "Open the crate on the server and get a chance to win rare ranks",
+      "Includes 5 crates"
+    ],
+    "image": "keys1.png",
+    "type": "keys",
+    "discont": 10
+  },
+  {
+    "id":8,
+    "name": "x10 Crate with Ranks",
+    "price": 8.99,
+    "description": [
+      "Open the crate on the server and get a chance to win rare ranks",
+      "Includes 10 crates"
+    ],
+    "image": "keys1.png",
+    "type": "keys",
+    "discont": 15
+  },
+  {
+    "id":9,
+    "name": "x3 Crate with Sapphires",
+    "price": 2.99,
+    "description": [
+      "Open the crate on the server and get a chance to win many sapphires",
+      "Includes 3 crates"
+    ],
+    "image": "keys2.png",
+    "type": "keys",
+    "discont": 0
+  },
+  {
+    "id":10,
+    "name": "x5 Crate with Sapphires",
+    "price": 4.99,
+    "description": [
+      "Open the crate on the server and get a chance to win many sapphires",
+      "Includes 5 crates"
+    ],
+    "image": "keys2.png",
+    "type": "keys",
+    "discont": 10
+  },
+  {
+    "id":11,
+    "name": "x10 Crate with Sapphires",
+    "price": 9.99,
+    "description": [
+      "Open the crate on the server and get a chance to win many sapphires",
+      "Includes 10 crates"
+    ],
+    "image": "keys2.png",
+    "type": "keys",
+    "discont": 15
+  },
+  {
+    "id":12,
+    "name": "Unbanned",
+    "price": 1.49,
+    "description": ["You can buy this and then get your account unbanned"],
+    "image": "another1.png",
+    "type": "other",
+    "discont": 0
+  },
+  {
+    "id":13,
+    "name": "Custom nickname",
+    "price": 1.99,
+    "description": [
+      "You can set a custom nickname, with colors.",
+      "Important: Read rule about custom nickname",
+      "When the nickname breaks the rules, you will be punished"
+    ],
+    "image": "another2.png",
+    "type": "other",
+    "discont": 0
+  }
+]

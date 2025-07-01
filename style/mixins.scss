@@ -1,0 +1,86 @@
+@import "variable";
+@mixin unterline($color) {
+  position: relative;
+  display: inline-block;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0;
+    border-radius: 2px;
+    background: $color;
+    transition: width 0.5s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+@mixin btn {
+  background-color: $akcent;
+  padding: 10px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  transition: scale 0.5s;
+  &:hover {
+    background-color: $akcent-dark;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+@mixin modalContent{
+  pointer-events: initial;
+  background: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 0.5em;
+  position: relative;
+}
+@mixin plusMinus{
+  width: 30px;
+  height: 30px;
+  color: $akcent-dark;
+  line-height: 0;
+background-color: rgb(255, 248, 240);
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid $gray-light;
+  transition: background-color 0.5s, color 0.3s;
+  &:hover{
+    color: white;
+    background-color: $akcent-dark;
+  }
+}
+@mixin cartSection{
+  background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@mixin close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

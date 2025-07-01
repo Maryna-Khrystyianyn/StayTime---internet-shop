@@ -1,0 +1,135 @@
+@import "variable";
+@import "header";
+@import "card-style";
+@import "mixins";
+@import "modal";
+@import "cart";
+@import "success";
+@import "rulles";
+@import "contact";
+@import url(https://fonts.bunny.net/css?family=noto-sans-bengali:100,200,300,400,500,600,700,800,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans Bengali", sans-serif;
+  background-color: $bg-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  scroll-margin-top: 80px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  //   @include section();
+  background-color: #f8f8f8;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category {
+  .category-header {
+    font-size: 2rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 160px;
+      height: 4px;
+      background-color: $akcent-dark;
+      border-radius: 2px;
+      transform: scaleX(0);
+      box-shadow: 2px 2px 10px $akcent-dark;
+      transform-origin: left;
+      transition: transform 0.8s ease-out;
+    }
+
+    &.visible::after {
+      transform: scaleX(1);
+    }
+  }
+  .category-menu {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .category-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      @include btn();
+      &:hover {
+        background-color: $akcent-green;
+      }
+      svg {
+        width: 30px;
+      }
+    }
+    .active-btn {
+      background-color: $akcent-green;
+      // background-color:$main-dark;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #2a2a2a;
+  color: white;
+  font-weight: 300;
+  .footer-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    & > {
+      flex-grow: 1;
+    }
+.rights{
+  display: flex;
+  gap: 10px;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+    .ip{
+      
+      span{
+        font-weight: 500;
+      }
+    }
+
+    .img-paycards {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  @media (max-width:600px) {
+    .footer-container{
+      flex-direction: column;
+    } 
+  }
+}

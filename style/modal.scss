@@ -1,0 +1,155 @@
+@import "variable";
+@import "mixins";
+@import "card-style";
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.modal-card {
+  @include modal();
+  z-index: 30;
+}
+
+.modal-card-content {
+  @include modalContent();
+  width: 500px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 60px 300px auto 80px;
+  grid-template-areas:
+    "h2 h2"
+    "img price"
+    "desc desc"
+    "bay bay";
+  h2 {
+    grid-area: h2;
+  }
+  .modal-card-img {
+    grid-area: img;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .description {
+    grid-area: desc;
+    margin-bottom: 20px;
+    p {
+      margin-top: 20px;
+    }
+  }
+  .card-bay {
+    grid-area: bay;
+    margin-bottom: 20px;
+  }
+  .card-modal-price {
+    grid-area: price;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .old-modal-price {
+      color: gray;
+      position: relative;
+      font-size: 1.3rem;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 2px;
+        background-color: $akcent-dark;
+        left: -10px;
+        top: 10px;
+      }
+    }
+    .new-modal-price {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: $main-dark;
+    }
+    .modal-sale {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $akcent-green;
+      color: white;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Close button styling */
+.close {
+  @include close();
+}
+
+/* Hidden class for hiding elements */
+.hidden {
+  display: none;
+}
+.card-price {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+// @media (max-width: 530px) {
+//   .modal-card-content {
+//     max-height: 90vh;
+//     overflow-y: auto;
+//     width: 90vw;
+//     grid-template-columns: 200px auto;
+//     .modal-card-img {
+//       width: 300px;
+//       height: 300px;
+//     }
+//   }
+// }
+@media (max-width: 530px) {
+  .modal-card-content {
+    width: 90vw;
+    grid-template-columns: auto;
+    grid-template-rows: 60px 340px auto auto auto;
+    grid-template-areas:
+      "h2"
+      "img"
+      "price"
+      "desc"
+      "bay";
+    justify-content: center;
+    .modal-card-img {
+      margin: auto;
+    }
+    .card-modal-price {
+      transform: scale(1.2);
+      flex-direction: row;
+      justify-content: space-around;
+      .modal-sale {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .modal-card-content {
+    grid-template-rows: 60px 270px auto auto auto;
+    .modal-card-img {
+      margin: auto;
+      height: 250px;
+      width: 250px;
+    }
+  }
+}
