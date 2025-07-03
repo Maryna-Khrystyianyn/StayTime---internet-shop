@@ -65,7 +65,7 @@ const cartModal = document.querySelector(".cart-modal") as HTMLDivElement;
 //======================================================================
 //==========SALE========================================================
 
-const mainDiskont = 10;
+const mainDiskont = 0;
 
 //======================================================================
 //=====LocalStorag======================================================
@@ -282,6 +282,7 @@ function printCart() {
       cart[index].total =
         Math.floor((cart[index].total - cart[index].price) * 100) / 100;
       printCartTotal(cauntTotal());
+      setCart(cart);
       printCart();
     }
     const deleteButton = target.closest(".item-delete") as HTMLElement;
@@ -289,6 +290,7 @@ function printCart() {
       const index = Number(deleteButton.dataset.index);
       cart.splice(index, 1);
       printCartTotal(cauntTotal());
+      setCart(cart);
       printCart();
     }
   });
@@ -297,39 +299,39 @@ function printCart() {
   //=============================================================================
   //=================    BAY   STRIPE   =========================================
 
-  const form = document.getElementById("buy-form") as HTMLFormElement;
-  const stripe = Stripe(
-    "pk_test_51RfGezH8oitdDHtZQRBnLCMTjCJIOFS2eD2OBg7l1F4OGmwR7lCcMcrPTKzV1EVLh06tpkouNQBejKDr74cyV2SY00O3rH3GGb"
-  );
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    console.log("let pya!!!");
-    const formData = new FormData(form);
-    const nickname = formData.get("nickname");
-    const email = formData.get("email");
-    const amount = cauntTotal();
+//   const form = document.getElementById("buy-form") as HTMLFormElement;
+//   const stripe = Stripe(
+//     "pk_test_51RfGezH8oitdDHtZQRBnLCMTjCJIOFS2eD2OBg7l1F4OGmwR7lCcMcrPTKzV1EVLh06tpkouNQBejKDr74cyV2SY00O3rH3GGb"
+//   );
+//   form.addEventListener("submit", async (e) => {
+//     e.preventDefault();
+//     console.log("let pya!!!");
+//     const formData = new FormData(form);
+//     const nickname = formData.get("nickname");
+//     const email = formData.get("email");
+//     const amount = cauntTotal();
 
-    // Sesion für backend
-    const res = await fetch("http://localhost:4242/create-checkout-session", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nickname, email, amount }),
-    });
-    const data = await res.json();
-    cleanCart();
-    if (data.sessionId) {
-      const result = await stripe.redirectToCheckout({
-        sessionId: data.sessionId,
-      });
+//     // Sesion für backend
+//     const res = await fetch("http://localhost:4242/create-checkout-session", {
+//       method: "POST",
+//       headers: { "Content-Type": "application/json" },
+//       body: JSON.stringify({ nickname, email, amount }),
+//     });
+//     const data = await res.json();
+//     cleanCart();
+//     if (data.sessionId) {
+//       const result = await stripe.redirectToCheckout({
+//         sessionId: data.sessionId,
+//       });
 
-      if (result.error) {
-        console.log(result.error.message);
-        alert(result.error.message);
-      } else {
-        console.log("keine sessionId");
-      }
-    }
-  });
+//       if (result.error) {
+//         console.log(result.error.message);
+//         alert(result.error.message);
+//       } else {
+//         console.log("keine sessionId");
+//       }
+//     }
+//   });
 }
 
 //========================================================================
