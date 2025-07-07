@@ -1,49 +1,56 @@
-.rulles{
-    margin-top: 80px;
-    min-height: 90vh;
-    p{
-        font-weight: 600;
-        font-style: italic;
-        margin: 20px 0;
+.rulles {
+  margin-top: 80px;
+  min-height: 90vh;
+  p {
+    font-weight: 600;
+    font-style: italic;
+    margin: 20px 0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      color: #191919;
+
+      &::before {
+        content: "\2714";
+        color: $akcent-green;
+        margin-right: 10px;
+      }
     }
-    ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        li{
-            color: #191919;
-            
-            &::before{
-                content: "\2714";
-                color: $akcent-green;
-                margin-right: 10px;
-            }
-        }
-        
-    }
+  }
 }
 
 .h1-pages {
-    font-size: 2rem;
-    position: relative;
+  font-size: 2rem;
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 160px;
-      height: 4px;
-      background-color: $akcent-dark;
-      border-radius: 2px;
-      box-shadow: 2px 2px 10px $akcent-dark;
-      animation: growLine 3s;
-    }
-@keyframes growLine {
-    from{width:0}
-    to{ width: 160px;}
-    
-}
-    
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 160px;
+    height: 4px;
+    background-color: $akcent-dark;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px $akcent-dark;
+    animation: growLine 3s;
   }
+  @keyframes growLine {
+    from {
+      width: 0;
+    }
+    to {
+      width: 160px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .h1-pages {
+    margin-top: 100px;
+  }
+}
