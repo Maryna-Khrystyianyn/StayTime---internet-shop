@@ -72,29 +72,6 @@ Although modern production applications often rely on frameworks, mastering the 
 * DOM API
 * Local Storage
 
----
-
-# 📂 Project Structure
-
-```
-mein-kraft-store
-│
-├── src
-│   ├── ts
-│   │   ├── cart.ts
-│   │   ├── products.ts
-│   │   └── app.ts
-│   │
-│   └── js
-│
-├── style
-│   ├── style.scss
-│   └── css
-│
-├── index.html
-├── package.json
-└── README.md
-```
 
 ---
 
